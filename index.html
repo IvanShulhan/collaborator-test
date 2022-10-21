@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>collaborator-test</title>
+  <link rel="stylesheet" href="./style.css">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main class="main">
+    <section class="page main__page">
+      <h1 class="page__title">Управление рассылками</h1>
+      <h2 class="page__subtitle">
+        Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. 
+        Но пожалуйста, исключите только те категории, которые действительно вас не интересуют. 
+        Мы обещаем слать только полезные письма где 😊
+      </h2>
+      <div class="page__content">
+        <div class="notifications page__notifications">
+          <h3 class="notifications__title">Общие уведомления</h3>
+          <div class="notification notifications__notification">
+            <h4 class="notification__name">Приветственная серия</h4>
+            <div class="notification__setting">
+              <label class="notification__label">
+                <input type="checkbox" checked>
+                <span></span>
+              </label>
+              <p class="notification__setting-text">
+                4 полезных и емких письма в течение месяца
+              </p>
+            </div>
+          </div>
+          <div class="notification notifications__notification notification--large-margin">
+            <h4 class="notification__name">Образовательные вебинары</h4>
+            <div class="notification__setting">
+              <label class="notification__label">
+                <input type="checkbox">
+                <span></span>
+              </label>
+              <p class="notification__setting-text">
+                Бесплатные вебинары проходят 1 раз в 2 недели. 
+                Вы будете получать 2 письма с напоминанием 
+                о предстоящем вебинаре
+              </p>
+            </div>
+          </div>
+          <div class="notification notifications__notification notification--centered">
+            <h4 class="notification__name">
+              Личные сообщения
+              <span class="notification__info">
+                <span class="notification__info-text">
+                  Письма об обновлениях и улучшениях платформы
+                </span>
+              </span>
+            </h4>
+            <div class="notification__setting notification__setting--centered">
+              <label class="notification__label">
+                <input type="checkbox" checked>
+                <span></span>
+              </label>
+              <div class="select notification__select">
+                <h3 class="select__title">
+                  Мгновенно
+                  <span>arrow</span>
+                </h3>
+                <div class="select__options">
+                  <span class="select__option" data-value="atTheMoment">Мгновенно</span>
+                  <span class="select__option" data-value="onceADay" selected>1 раз в день</span>
+                  <span class="select__option" data-value="turnOff">Отключить</span>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="notifications page__notifications">
+          <h3 class="notifications__title">Уведомление по Сайтам</h3>
+          <div class="notification notifications__notification">
+            <h4 class="notification__name">Новости</h4>
+            <div class="notification__setting">
+              <label class="notification__label">
+                <input type="checkbox">
+                <span></span>
+              </label>
+              <p class="notification__setting-text">
+              </p>
+            </div>
+          </div>
+          <div class="notification__subsection">
+            <h4 class="notification__subtitle">Поисковые агенты</h4>
+            <div class="notification notifications__notification">
+              <div class="notification__name-block">
+                <h4 class="notification__name">Бизнес</h4>
+                <div class="notification__tags">
+                  <ul class="notification__tags-list">
+                    <li class="notification__tag">
+                      Seo
+                      <span></span>
+                    </li>
+                    <li class="notification__tag">
+                      Продвижение
+                      <span></span>
+                    </li>
+                    <li class="notification__tag">
+                      Аналитика
+                      <span></span>
+                    </li>
+                    
+                  </ul>
+                  <button class="notification__tags-button">Детали</button>
+                </div>
+              </div>
+              <div class="notification__setting notification__setting--is-on-bottom">
+                <label class="notification__label">
+                  <input type="checkbox" checked>
+                  <span></span>
+                </label>
+                <p class="notification__setting-text notification__setting-text--short">
+                  Поисковый агент присылает 1 письмо в неделю и только при условии, что новые площадки
+                </p>
+              </div>
+            </div>
+            <div class="notification notifications__notification">
+              <div class="notification__name-block">
+                <h4 class="notification__name">123</h4>
+                <div class="notification__tags">
+                  <ul class="notification__tags-list">
+                    <li class="notification__tag">
+                      Seo
+                      <span></span>
+                    </li>
+                    <li class="notification__tag">
+                      Продвижение
+                      <span></span>
+                    </li>
+                  </ul>
+                  <button class="notification__tags-button">Детали</button>
+                </div>
+              </div>
+              <div class="notification__setting notification__setting--is-on-bottom">
+                <label class="notification__label">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+                <p class="notification__setting-text">
+                </p>
+              </div>
+            </div>
+            <div class="notification notifications__notification">
+              <div class="notification__name-block">
+                <h4 class="notification__name">SEO</h4>
+                <div class="notification__tags">
+                  <ul class="notification__tags-list">
+                    <li class="notification__tag">
+                      Seo
+                      <span></span>
+                    </li>
+                    <li class="notification__tag">
+                      Продвижение
+                      <span></span>
+                    </li>
+                    <li class="notification__tag">
+                      Аналитика
+                      <span></span>
+                    </li>
+                  </ul>
+                  <button class="notification__tags-button">Детали</button>
+                </div>
+              </div>
+              <div class="notification__setting notification__setting--is-on-bottom"">
+                <label class="notification__label">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+                <p class="notification__setting-text">
+                </p>
+              </div>
+            </div>
+            <div class="notification notifications__notification">
+              <div class="notification__name-block">
+                <h4 class="notification__name">Бурж ссылки</h4>
+                <div class="notification__tags">
+                  <ul class="notification__tags-list">
+                    <li class="notification__tag">
+                      Биржи ссылок: Не обнаружен
+                      <span></span>
+                    </li>
+                    </li>
+                  </ul>
+                  <button class="notification__tags-button">Детали</button>
+                </div>
+              </div>
+              <div class="notification__setting notification__setting--is-on-bottom">
+                <label class="notification__label">
+                  <input type="checkbox" checked>
+                  <span></span>
+                </label>
+                <p class="notification__setting-text">
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="notification__subsection">
+            <h4 class="notification__subtitle notification__subtitle--with-arrow">
+              Рекламные компании
+            </h4>
+            <div class="notification notifications__notification notification--centered notification--small-margin">
+              <h4 class="notification__name">
+                Строительство домов в Украине
+              </h4>
+              <div class="notification__setting notification__setting--centered">
+                <label class="notification__label">
+                  <input type="checkbox" checked>
+                  <span></span>
+                </label>
+                <div class="select notification__select">
+                  <h3 class="select__title">
+                    Мгновенно
+                    <span>arrow</span>
+                  </h3>
+                  <div class="select__options">
+                    <span class="select__option" data-value="atTheMoment">Мгновенно</span>
+                    <span class="select__option" data-value="onceADay" selected>1 раз в день</span>
+                    <span class="select__option" data-value="turnOff">Отключить</span>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="notification notifications__notification notification--centered">
+              <h4 class="notification__name">
+                Строительство домов в Украине
+              </h4>
+              <div class="notification__setting notification__setting--centered">
+                <label class="notification__label">
+                  <input type="checkbox">
+                  <span></span>
+                </label>
+                <div class="select notification__select">
+                  <h3 class="select__title">
+                    Мгновенно
+                    <span>arrow</span>
+                  </h3>
+                  <div class="select__options">
+                    <span class="select__option" data-value="atTheMoment">Мгновенно</span>
+                    <span class="select__option" data-value="onceADay" selected>1 раз в день</span>
+                    <span class="select__option" data-value="turnOff">Отключить</span>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="notifications page__notifications">
+          <h3 class="notifications__title">Уведомления по Телеграму</h3>
+          <div class="notification notifications__notification">
+            <h4 class="notification__name">Новости</h4>
+            <div class="notification__setting">
+              <label class="notification__label">
+                <input type="checkbox">
+                <span></span>
+              </label>
+              <p class="notification__setting-text">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buttons page__buttons">
+          <button class="button buttons__button button--is-light" id="defaultButton">
+            По умолчанию
+          </button>
+          <button class="button buttons__button button--is-dark" id="submitButton">
+            Сохранить изменения
+          </button>
+        </div>
+        <div class="modal page__modal" id="details">
+          <p class="modal__text">Text</p>
+          <button class="modal__close-button">Close</button>
+          <div class="modal__buttons">
+            <button class="button modal__button button--is-light" id="cancel-button">Нет</button>
+            <button class="button modal__button button--is-light" id="submit-button">Да</button>
+          </div>
+        </div>
+        <span class="mask page__mask">Mask</span>
+        <div class="success-message page__success-message">
+          Поздравляю! <br/> Ваши настройки сохранены
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
