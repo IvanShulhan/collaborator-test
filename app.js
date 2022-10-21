@@ -111,7 +111,6 @@ function setSelectValue (el, text) {
 function hideModal() {
   modal.classList.remove('is-visible');
   mask.classList.remove('is-visible');
-  document.body.style.overflow = 'visible';
 }
 
 function showModal(isInfoModal) {
@@ -128,7 +127,6 @@ function showModal(isInfoModal) {
 
   modal.classList.add('is-visible');
   mask.classList.add('is-visible');
-  document.body.style.overflow = 'hidden';
 }
 
 function showSuccessMessage() {
