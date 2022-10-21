@@ -401,6 +401,7 @@
 }
 
 .mask {
+  font-size: 0;
   display: none;
   position: fixed;
   width: 100vw;
